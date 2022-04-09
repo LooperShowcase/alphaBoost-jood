@@ -3,56 +3,57 @@
   <head>
     <title>Microsoft</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      href="https://cdn-icons-png.flaticon.com/512/732/732221.png"
-    />
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="products.html" />
+    <link rel="stylesheet" href="signup.html" />
+    <link rel="stylesheet" href="info.html" />
   </head>
   <body>
     <center>
       <ul>
-        <li><a href="#info.html">information</a></li>
-        <li><a href="#products.html">products</a></li>
-        <li><a href="#index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="signup.html">Sign up</a></li>
+        <li><a href="info.html">information</a></li>
+        <li><a href="#products.html">products</a></li>
+        <li id="myfloat">
+          <input onchange="ChangeBG()" id="BGCOLOR" type="color" />
+        </li>
+        <li id="myfloat">
+          <button type="button" onclick="darkmode()">dark mode</button>
+        </li>
+        <li id="myfloat">
+          <button type="button" onclick="normalmode()">normal mode</button>
+        </li>
+        <li id="myfloat">
+          <img
+            id="profilePic"
+            src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+            width=""
+          />
+        </li>
       </ul>
-      <button type="button" onclick="darkmode()">dark mode</button>
-      <button type="button" onclick="normalmode()">normal mode</button>
+
       <h1>Microsoft</h1>
-      <br /><img />
-    </center>
-    <p></p>
-    <p>
-      Microsoft Corporation is an American multinational technology corporation
-      which produces computer software, consumer electronics, personal
-      computers, and related services. Its best-known software products are the
-      Microsoft Windows line of operating systems, the Microsoft Office suite,
-      and the Internet Explorer and Edge web browsers. Its flagship hardware
-      products are the Xbox video game consoles and the Microsoft Surface lineup
-      of touchscreen personal computers. Microsoft ranked No. 21 in the 2020
-      Fortune 500 rankings of the largest United States corporations by total
-      revenue; it was the world's largest software maker by revenue as of 2016.
-      It is one of the Big Five American information technology companies,
-      alongside Alphabet, Amazon, Apple, and Meta.
-    </p>
-    <center>
-      <iframe
-        width="355"
-        height="250"
-        src="https://www.youtube.com/embed/Xjq0kljBZnY?autoplay=1&mute=0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <h1>welcome</h1>
+      <p>
+        Here you will enjoy reading about Microsoft trust <br />
+        &#128512; &#128516; &#128525; &#128151;
+      </p>
+
+     
       <hr />
+
+      <footer>
+        <h1>Thank you for visiting my website</h1>
+      </footer>
     </center>
     <script>
       function darkmode() {
         document.body.style.background = "black";
       }
-      function normalmode() {
-        document.body.style.background = " background-image: linear-gradient(to bottom left, red, green, blue, orange);"
+      function ChangeBG() {
+        var newcolor = document.getElementById("BGCOLOR").value;
+        document.body.style.background = newcolor;
       }
     </script>
   </body>
